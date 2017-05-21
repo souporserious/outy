@@ -1,0 +1,9 @@
+{
+  "name": "outy",
+  "version": "0.1.0",
+  "description": "A simple way to listen for events outside of elements.",
+  "main": "index.js",
+  "repository": "https://github.com/souporserious/outy",
+  "author": "Travis Arnold",
+  "license": "MIT",
+}
