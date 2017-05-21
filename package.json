@@ -1,6 +1,6 @@
 {
   "name": "outy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple way to listen for events outside of elements.",
   "main": "index.js",
   "repository": {
