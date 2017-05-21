@@ -1,7 +1,7 @@
 ;(function() {
   'use strict'
 
-  function outy() {
+  function outy(nodes, types, eventHandler) {
     nodes = Array.isArray(nodes) ? nodes : [nodes]
     types = Array.isArray(types) ? types : [types]
 
