@@ -28,6 +28,39 @@ function handleOutsideTap() {
 outsideTap.remove()
 ```
 
+```js
+import outy from 'outy'
+
+class MyComponent extends React.Component {
+	componentDidMount () {
+    const elements = [this.box1, this.box2]
+    const types = ['click', 'touchstart']
+		this.outsideClick = outy(elements, types, this.handleOutsideTap.bind(this))
+	}
+
+	componentWillUnmount () {
+		this.outsideClick.remove()
+	}
+  
+  handleOutsideTap() {
+    // close an overlay again?
+  }
+  
+  render() {
+    return (
+      <div>
+        <div ref={c => this.box1 = c}>
+          Box 1
+        </div>
+        <div ref={c => this.box2 = c}>
+          Box 2
+        </div>
+      <div>
+    )
+  }
+}
+```
+
 ## API
 
 ### outy
