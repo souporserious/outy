@@ -27,3 +27,21 @@ function handleOutsideTap() {
 // cleanup later
 outsideTap.remove()
 ```
+
+## API
+
+### outy
+
+Attaches event listeners to document and fires an event whenever any elements outside the provided elements fire.
+
+Returns **remove**
+
+**Parameters**
+
+-   `elements` **[Node|Array](https://developer.mozilla.org/en-US/docs/Web/API/Node)** The element[s] that will reject the event[s]
+-   `types` **[String|Array](https://developer.mozilla.org/en-US/docs/Web/Events)** The event type[s] to listen for
+-   `eventHandler` **\[Func]** The function that is called when an outside event occurs
+
+### remove
+
+Removes all event listeners.
